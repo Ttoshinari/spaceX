@@ -1,0 +1,26 @@
+<div class="contents_row">
+  <%= form_for @tweet , url: tweet_path do |f| %>
+<div class="edit_contents">
+<h3 >編集する</h3>
+<div class="field">
+    <%= f.label :名前を編集する %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :画像を編集する %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :本文を編集する %>
+    <%= f.text_field :text %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+
+  <% end %>
+</div>

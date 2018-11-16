@@ -1,0 +1,28 @@
+<div class="contents_row">
+<a class="btn-floating btn-large cyan pulse"><i class="material-icons">投稿</i></a>
+<%= form_for @tweet do |f| %>
+
+  <div class="field">
+    <%= f.label :名前を記入してください %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :URLを貼ってください %>
+    <%= f.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= f.label :コメントを書いてください %>
+    <%= f.text_area :text %>
+  </div>
+
+  <div class="actions">
+    <button class="btn waves-effect waves-light" type="submit" name="action">完了
+  </button>
+  </div>
+<% end %>
+</div>
+
+
+
